@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="tooltip_text_size">22sp</dimen>
+
+</resources>

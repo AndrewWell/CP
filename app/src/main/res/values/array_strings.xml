@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="methods_for_crypto">
+        <item>@string/parsing_AES</item>
+        <item>@string/parsing_DES</item>
+        <item>@string/parsing_RC4</item>
+        <item>@string/parsing_RSA</item>
+        <item>@string/parsing_TripleDes</item>
+        <item>@string/parsing_Atbash</item>
+        <item>@string/parsing_Vigener</item>
+        <item>@string/parsing_Xor</item>
+        <item>@string/parsing_Gost_28147_89</item>
+        <item>@string/parsing_Polybius</item>
+        <item>@string/parsing_Morse</item>
+        <item>@string/parsing_Moon</item>
+        <item>@string/parsing_Mirror</item>
+        <item>@string/parsing_Hill</item>
+        <item>@string/parsing_Caesar</item>
+        <item>@string/parsing_Playfair</item>
+    </string-array>
+
+    <string-array name="methods_for_theory">
+        <item>@string/parsing_AES</item>
+        <item>@string/parsing_DES</item>
+        <item>@string/parsing_RC4</item>
+        <item>@string/parsing_RSA</item>
+        <item>@string/parsing_TripleDes</item>
+        <item>@string/parsing_Atbash</item>
+        <item>@string/parsing_Vigener</item>
+        <item>@string/parsing_Xor</item>
+        <item>@string/parsing_Gost_28147_89</item>
+        <item>@string/parsing_Polybius</item>
+        <item>@string/parsing_Morse</item>
+        <item>@string/parsing_Moon</item>
+        <item>@string/parsing_Mirror</item>
+        <item>@string/parsing_Hill</item>
+        <item>@string/parsing_Caesar</item>
+        <item>@string/parsing_Playfair</item>
+        <item>@string/parsing_Shannon_Fano</item>
+    </string-array>
+
+
+    <string-array name="theory_AES">
+        <item>@string/theory_AES_head</item>
+        <item>@string/theory_AES_history</item>
+        <item>@string/theory_AES_encryption</item>
+        <item>@string/theory_AES_cryptographic_strength</item>
+    </string-array>
+
+    <string-array name="theory_DES">
+        <item>@string/theory_DES_head</item>
+        <item>@string/theory_DES_history</item>
+        <item>@string/theory_DES_cryptographic_strength</item>
+    </string-array>
+
+    <string-array name="theory_RC4">
+        <item>@string/theory_RC4_head</item>
+        <item>@string/theory_RC4_history</item>
+        <item>@string/theory_RC4_security</item>
+        <item>@string/theory_RC4_cryptographic_strength_1</item>
+        <item>@string/theory_RC4_cryptographic_strength_2</item>
+    </string-array>
+
+    <string-array name="theory_RSA">
+        <item>@string/theory_RSA_head</item>
+        <item>@string/theory_RSA_history</item>
+        <item>@string/theory_RSA_cryptographic_strength</item>
+    </string-array>
+
+    <string-array name="theory_3DES">
+        <item>@string/theory_3DES_head</item>
+    </string-array>
+
+    <string-array name="theory_Atbash">
+        <item>@string/theory_Atbash_head</item>
+        <item>@string/theory_Atbash_history</item>
+    </string-array>
+
+    <string-array name="theory_Vigener">
+        <item>@string/theory_Vigener_head</item>
+        <item>@string/theory_Vigener_history</item>
+        <item>@string/theory_Vigener_cryptoanalysis</item>
+        <item>@string/theory_Vigener_frequency_analysis</item>
+    </string-array>
+
+    <string-array name="theory_XOR">
+        <item>@string/theory_XOR_head</item>
+    </string-array>
+
+    <string-array name="theory_Gost_28147_89">
+        <item>@string/theory_Gost_28147_89_head</item>
+        <item>@string/theory_Gost_28147_89_history</item>
+        <item>@string/theory_Gost_28147_89_cryptoanalysis</item>
+        <item>@string/theory_Gost_28147_89_criticism</item>
+    </string-array>
+
+    <string-array name="theory_Polybius">
+        <item>@string/theory_Polybius_head</item>
+    </string-array>
+
+    <string-array name="theory_Morse">
+        <item>@string/theory_Morse_head</item>
+        <item>@string/theory_Morse_history_1</item>
+        <item>@string/theory_Morse_history_2</item>
+        <item>@string/theory_Morse_coding_principle</item>
+    </string-array>
+
+    <string-array name="theory_Moon">
+        <item>@string/theory_Moon_head</item>
+        <item>@string/theory_Moon_history</item>
+    </string-array>
+
+    <string-array name="theory_Hill">
+        <item>@string/theory_Hill_head</item>
+        <item>@string/theory_Hill_history</item>
+        <item>@string/theory_Hill_cryptographic_strength</item>
+        <item>@string/theory_Hill_mechanical_release</item>
+    </string-array>
+
+    <string-array name="theory_Caesar">
+        <item>@string/theory_Caesar_head</item>
+    </string-array>
+
+    <string-array name="theory_Playfair">
+        <item>@string/theory_Playfair_head</item>
+        <item>@string/theory_Playfair_history</item>
+        <item>@string/theory_Playfair_description</item>
+        <item>@string/theory_Playfair_cryptoanalysis</item>
+    </string-array>
+
+    <string-array name="theory_Shannon_Fano">
+        <item>@string/theory_Shannon_Fano_head</item>
+        <item>@string/theory_Shannon_Fano_calculation_algorithm</item>
+    </string-array>
+</resources>

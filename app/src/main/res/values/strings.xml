@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name" translatable="false">Encryption reference</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_theory">Theory</string>
+    <string name="menu_crypto">Cryptography</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_qr_scanner">QR Scanner</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_manual">Manual</string>
+    <string name="menu_about">About</string>
+
+    <string name="settings_titleGeneral">General</string>
+    <string name="settings_titleOptional">Optional</string>
+    <string name="settings_spinner_lang_En">English</string>
+    <string name="settings_spinner_lang_Ru">Russia</string>
+    <string name="settings_spinner_systemic">Systemic</string>
+    <string name="settings_uploaded">Data uploaded</string>
+    <string name="settings_enterLog">Enter Log</string>
+    <string name="settings_titlePermManag">Permission Management</string>
+    <string name="settings_camera">Camera</string>
+    <string name="settings_intMemory">Internal Memory</string>
+    <string name="settings_connectMC">Connect MC</string>
+    <string name="setting_titleDev">For the developer</string>
+    <string name="setLocaleChan">Application localization changed</string>
+
+    <string name="crypto_titleEncrypt">Encrypt</string>
+    <string name="crypto_titleDecrypt">Decrypt</string>
+    <string name="crypto_titleMethod">Method</string>
+    <string name="crypto_titleKey">Key</string>
+    <string name="crypto_titleEncryptText">Encrypted Text</string>
+    <string name="crypto_titleDecryptText">Decrypted Text</string>
+    <string name="crypto_titleClear">Clear</string>
+
+    <string name="copyBuf">Data copied to clipboard</string>
+    <string name="clearForm">Form cleared</string>
+
+    <string name="crypto_helpEnterKey">Enter the key for cryptography</string>
+    <string name="crypto_helpEnterOpenText">Enter the public text</string>
+    <string name="crypto_helpEnterCloseText">Enter the private text</string>
+    <string name="crypto_helpEnterText">Enter text</string>
+
+    <string name="qrScanner_scan">Scan</string>
+    <string name="qrScanner_create">Create</string>
+
+    <string name="parsing_AES" translatable="false">Advanced_Encryption_Standard</string>
+    <string name="parsing_DES" translatable="false">Data_Encryption_Standard</string>
+    <string name="parsing_DSA" translatable="false">Digital_Signature_Algorithm</string>
+    <string name="parsing_RC4" translatable="false">RC4</string>
+    <string name="parsing_RSA" translatable="false">RSA_(cryptosystem)</string>
+    <string name="parsing_TripleDes" translatable="false">Triple_DES</string>
+    <string name="parsing_Atbash" translatable="false">Atbash</string>
+    <string name="parsing_Vigener" translatable="false">Vigenere</string>
+    <string name="parsing_Xor" translatable="false">XOR_cipher</string>
+    <string name="parsing_Gost_28147_89" translatable="false">GOST_(block_cipher)</string>
+    <string name="parsing_Polybius" translatable="false">Polybius_square</string>
+    <string name="parsing_Morse" translatable="false">Morse_code</string>
+    <string name="parsing_Moon" translatable="false">Moon_type</string>
+    <string name="parsing_Hill" translatable="false">Hill_cipher</string>
+    <string name="parsing_Caesar" translatable="false">Caesar_cipher</string>
+    <string name="parsing_Playfair" translatable="false">Playfair_cipher</string>
+    <string name="parsing_Shannon_Fano" translatable="false">Shannon–Fano_coding</string>
+    <string name="parsing_Mirror" translatable="false">Mirror</string>
+
+    <string name="toast_savedImage">Images saved Successfully</string>
+    <string name="toast_notSavedImage">Images not Saved</string>
+
+    <string name="about_titleFeedback">Send Feedback</string>
+    <string name="about_hintFeedback">Help us make app better</string>
+    <string name="about_intro">Intro</string>
+    <string name="about_hintIntro">Show application hints</string>
+    <string name="about_copyright" translatable="false">Copyright © Evdokimov Andrey</string>
+    <string name="about_opedDM">Open developer mode</string>
+    <string name="about_closeDM">Close developer mode</string>
+    <string name="about_app_version">App version</string>
+    <string name="about_feedback_mail" translatable="false">evdokimov1220@yahoo.com</string>
+
+    <string name="nextShowIntro">Click to continue</string>
+    <string name="tempUnav">Feature temporarily unavailable</string>
+    <string name="theory_AES_head">
+        AES is a symmetric block cipher adopted as an encryption standard by the US government as a result of the AES competition.
+        This algorithm has been well analyzed and is now widely used, as was the case with its predecessor DES.
+        The US National Institute of Standards and Technology published the AES specification on November 26, 2001, after a five-year
+        period during which 15 candidates were created and evaluated. On May 26, 2002, AES was announced as the encryption standard.
+        As of 2009, AES is one of the most widely used symmetric encryption algorithms. Support for AES acceleration was introduced by Intel
+        to the x86 processor family starting with the Arrandale in 2010 and later on the Sandy Bridge processors; AMD has been with Bulldozer since 2011.
+    </string>
+    <string name="theory_AES_history">
+        On January 2, 1997, NIST announces its intention to select a successor to DES, which has been the American standard since 1977. On October 2, 2000,
+        it was announced that the winner of the competition was the Rijndael algorithm, and the standardization procedure began. On February 28, 2001, the draft
+        was published, and on November 26, 2001, AES was accepted as FIPS 197. A historical retrospective of the competition can be found on the NIST website.
+    </string>
+    <string name="theory_AES_encryption">
+        AES is a standard based on the Rijndael algorithm. For AES, the length of input and State is constant and equal to 128 bits, and the length of the cipher key K is 128,
+        192, or 256 bits. At the same time, the original Rijndael algorithm allows a key length and block size from 128 to 256 bits with a step of 32 bits. To denote the
+        selected lengths of input, State and Cipher Key in 32-bit words, the notation Nb = 4 for input and State, Nk = 4, 6, 8 for Cipher Key, respectively, is used for different key lengths.
+        At the beginning of encryption, input is copied to the State array according to the rule state[r,c]=input[r+4c]. After that, the AddRoundKey() procedure is applied to the State,
+        and then the State goes through the transformation procedure (round) 10, 12, or 14 times (depending on the key length), while taking into account that the last round is slightly different from
+        the previous ones. As a result, after the completion of the last round of transformation, the State is copied to output according to the rule output[r+4c]=state[r,c].
+        Separate transformations SubBytes(), ShiftRows(), MixColumns() and AddRoundKey() handle the State. Array w[] - contains the key schedule.
+    </string>
+    <string name="theory_AES_cryptographic_strength">
+        In June 2003, the US National Security Agency determined that the AES cipher was strong enough to be used to protect government secrets. Up to the SECRET level, it was allowed to use 128-bit keys;
+        for the TOP SECRET level, 192 and 256-bit keys were required.
+    </string>
+
+    <string name="theory_DES_head">
+        DES (Data Encryption Standard) is an algorithm for symmetric encryption developed by IBM and approved by the US government in 1977 as an official standard (FIPS 46-3). The block size for DES is 64 bits.
+        The algorithm is based on a Feistel network with 16 cycles (rounds) and a 56-bit key. The algorithm uses a combination of non-linear (S-boxes) and linear (E, IP, IP-1 permutations) transformations.
+        A direct development of DES is currently the Triple DES (3DES) algorithm. In 3DES, encryption/decryption is performed by running the DES algorithm three times.
+    </string>
+    <string name="theory_DES_history">
+        In 1972, a study of the US government`s need for computer security was conducted. The American "National Bureau of Standards" (NBS) (now known as NIST - "National Institute of Standards and Technology")
+        identified the need for a government-wide standard for encrypting non-critical information.
+        The NBS consulted with the NSA (US National Security Agency) and on May 15, 1973, announced the first competition for the creation of a cipher. Strict requirements for the new cipher were formulated.
+        IBM entered the competition with a cipher it had developed called "Lucifer". The ciphers of none of the contestants (including "Lucifer") did not ensure the fulfillment of all requirements. During 1973-1974,
+        IBM finalized its "Lucifer": it was based on the Horst Feistel algorithm created earlier. On August 27, 1974, the second competition began. This time the cipher "Lucifer" was considered acceptable.
+        On March 17, 1975, the proposed DES algorithm was published in the Federal Register. In 1976, two public symposiums were held to discuss DES. At the symposiums, changes made to the algorithm by the NSA were heavily
+        criticized. The NSA reduced the original key length and S-boxes (substitution boxes), whose design criteria were not disclosed. The NSA was suspected of deliberately weakening the algorithm so that the NSA could easily view encrypted messages.
+    </string>
+    <string name="theory_DES_cryptographic_strength">
+        In 1990, Eli Biham and Adi Shamir conducted independent research on differential cryptanalysis, the main method for breaking block symmetric encryption algorithms. These studies removed some of the suspicions about the hidden weakness of S-permutations.
+        S-boxes of the DES algorithm turned out to be much more resistant to attacks than if they were randomly chosen. This means that this analysis technique was known to the NSA as early as the 1970s. The DES algorithm was "hacked" in 39 days using a huge network of tens of thousands of computers.
+        Public organization "EFF", dealing with the problems of information security and personal privacy on the Internet, initiated a study "DES Challenge II" in order to identify problems with DES. As part of the study, RSA Laboratory employees built a $250,000 supercomputer. In 1998, the supercomputer
+        decrypted DES-encoded data using a 56-bit key in less than three days. The supercomputer was named "EFF DES Cracker". Specially for this occasion, scientists organized a press conference and spoke with concern that attackers are unlikely to miss the opportunity to take advantage of such a vulnerability.
+        Some government officials and experts have argued that cracking the DES code requires a multi-million dollar supercomputer. "It's time for the government to recognize the insecurity of DES and support the creation of a stronger encryption standard," said EFF President Barry Steinhardt. Export restrictions
+        imposed by the US government apply to encryption technologies with keys longer than 40 bits. However, as the results of the RSA Laboratory experiment showed, there is a possibility of hacking even more powerful code.
+    </string>
+
+    <string name="theory_RC4_head">
+        RC4 (from the English Rivest cipher 4 or Rons code), also known as ARC4 or ARCFOUR (assumed RC4) is a stream cipher widely used in various information security networks in computer networks (for example, in SSL and TLS protocols, wireless security algorithms). networks). WEP and WPA networks).
+        The cipher is developed by RSA Security and a license is required to use it. The RC4 algorithm, like any stream cipher, is based on a pseudo-random bit generator. At the input of the generator, behind the original key, and at the output, pseudo-random bits are read. The key length can be from 40 to 2048 bits. Generated bits are common.
+        The main advantages of the cipher: high speed; variable key size. RC4 is quite vulnerable if: non-random or related keys are used; one keystream is used twice.
+    </string>
+    <string name="theory_RC4_history">
+        The RC4 stream cipher was created by Ronald Rivest of RSA Security in 1987. The abbreviation "RC4" officially stands for "Rivest cipher 4" or "Rivest cipher" ("4" is the version number; RC1 was never published; RC3 was developed, but a vulnerability was found in it), but it is often considered an abbreviation for "Ron's code" ("Ron's code").
+        For seven years, the cipher was a trade secret, and an exact description of the algorithm was provided only after the signing of a non-disclosure agreement, but in September 1994, its description was anonymously sent to the Cypherpunks mailing list. Soon a description of RC4 was published on the usenet newsgroup "sci.crypt".
+        From there, the source code found its way to many sites on the Internet. The published algorithm produced ciphertexts at the output that matched the ciphertexts produced by the original RC4. Owners of legal copies of the RC4 source code confirmed the identity of the algorithms with differences in notation and program structure. Since this algorithm is known,
+        it is no longer a trade secret. However, the name "RC4" is a trademark of RSA Security. To avoid possible claims from the trademark owner, the cipher is sometimes referred to as "ARCFOUR" or "ARC4", referring to the English. alleged RC4 - "alleged" RC4 (because RSA Security has not officially published the algorithm).
+    </string>
+    <string name="theory_RC4_security">
+        Unlike modern ciphers (such as eSTREAM), RC4 does not use a nonce along with the key. This means that if one key is to be used for a long time to encrypt multiple streams, the cryptosystem itself using RC4,
+        must combine chance and long-term key to obtain a streaming key for RC4. One possible solution is to generate a new key for RC4 using a hash function from the long-term key and nonce. However, many applications using RC4 simply concatenate the key and the nonce. Due to this and the weak key schedule used in RC4, the application can become vulnerable.
+        Therefore, it has been deprecated by many software companies such as Microsoft.
+    </string>
+    <string name="theory_RC4_cryptographic_strength_1">
+        In 2001, Fluhrer, Mantin, and Shamir published a paper on the vulnerability of the RC4 key schedule. They showed that the first bytes of a key stream among all possible keys are not random. From these bytes, it is possible with a high probability to obtain information about the cipher key used. And if the long-term key and nonce are simply glued together to create an RC4 cipher key,
+        then this long-term key can be obtained by analyzing a sufficiently large number of messages encrypted using this key. This vulnerability and some related effects were used to break WEP encryption on IEEE 802.11 wireless networks. This showed the need to replace WEP as soon as possible, which led to the development of a new WPA security standard for wireless networks.
+    </string>
+    <string name="theory_RC4_cryptographic_strength_2">
+        In 2005, Andreas Klein presented an analysis of the RC4 cipher in which he pointed out the strong correlation between the key and the RC4 keystream. Klein analyzed the attacks in the first round (similar to the PMS attack), in the second round and their possible improvements. He also suggested some changes to the algorithm to improve the strength of the cipher. In particular, he argues that if we change
+        the direction of the cycle is reversed in the key schedule algorithm, then it is possible to make the cipher more resistant to attacks such as FMS.
+    </string>
+
+    <string name="theory_RSA_head">
+        RSA (an acronym for Rivest, Shamir, and Adleman) is a public-key cryptographic algorithm based on the computational complexity of the large prime factorization problem. The RSA cryptosystem was the first system suitable for both encryption and digital signature. The algorithm is used in a large number of cryptographic applications, including PGP, S/MIME,
+        TLS/SSL, IPSEC/IKE and others.
+    </string>
+    <string name="theory_RSA_history">
+        The idea of an asymmetric public/private key cryptology is attributed to Whitfield Diffie and Martin Hellman, who published the concept in 1976. They also introduced digital signatures and tried to apply number theory. Their formulation used a shared secret key created by exponentializing some number modulo a prime number. However, they left open the problem of implementing
+        a one-way function, perhaps because the complexity of factorization was not well understood at the time. Ron Rivest, Adi Shamir, and Leonard Adleman at MIT made several attempts over the course of a year to create a one-way function that would be difficult to invert. Rivest and Shamir, as computer scientists, proposed many potential features, and Adleman, as a mathematician, was responsible
+        for finding their weaknesses. They tried many approaches, including "knapsack" and "permutation polynomials". For a while, they thought that what they wanted to achieve was impossible due to conflicting requirements.
+        In April 1977, they spent Pesach at the home of a student and drank a lot of Manishevitz wine before returning to their home around midnight. Rivest, unable to sleep, lay down on the couch with his math textbook and began to think about his one-sided function. He spent the rest of the night formalizing his idea, and by dawn most of the article was ready. The algorithm is now known as RSA - the
+        initials of their last names, in the same order as in their paper. Clifford Cox, an English mathematician working for the British intelligence service Government Communications Headquarters (GCHQ), described the equivalent system in an internal document in 1973. However, given the relatively expensive computers required to implement it at the time, it was considered mostly a curiosity and, as far
+        as is known, was never implemented. However, his discovery was only revealed in 1997 due to his top-secret classification.
+    </string>
+
+    <string name="theory_RSA_cryptographic_strength">
+        The cryptographic strength of the RSA algorithm is based on the assumption that it is extremely difficult to determine the secret key from a known one, since for this it is necessary to solve the problem of the existence of integer divisors. This problem is NP - complete. Known exact algorithms for solving this problem have an exponential estimate of computational complexity, which results in the impossibility of obtaining
+         exact solutions for problems of large and even medium dimensions. Moreover, the very question of the existence of efficient algorithms for solving NP-complete problems is still open. In this regard, for numbers consisting of 200 digits (namely, such numbers are recommended to be used), traditional methods require a huge number of operations (about 1023). All asymmetric cryptosystems try to
+         crack by direct enumeration of keys. Therefore, in asymmetric cryptosystems, long keys are used. To provide an equivalent level of protection, the key of an asymmetric cryptosystem must be much longer than the key of a symmetric cryptosystem. This immediately affects the computing resources required for encryption. Bruce Schneier in Applied Cryptography: Protocols, Algorithms, and Source Code
+         in C" gives the following data on equivalent key lengths.
+         In order to avoid the low speed of asymmetric encryption algorithms, a temporary symmetric key is generated for each message and only it is encrypted with asymmetric algorithms. The message itself is encrypted using this temporary session key. This session key is then encrypted using the recipient's public asymmetric key and an asymmetric encryption algorithm. After that
+         this encrypted session key, along with the encrypted message, is transmitted to the recipient. The recipient uses the same asymmetric encryption algorithm and their private key to decrypt the session key, and the resulting session key is used to decrypt the message itself. In asymmetric cryptosystems, it is important that the session and asymmetric keys are comparable in terms of the level
+         the security they provide. If a short session key (such as DES) is used, then it doesn't matter how large the asymmetric keys are. Hackers will not attack them, but session keys. Asymmetric public keys are vulnerable to brute-force attacks, in part because they are hard to replace. If the attacker learns the secret asymmetric key, then not only
+         current, but also all subsequent interactions between the sender and the recipient.
+    </string>
+
+    <string name="theory_3DES_head">
+       Triple DES (3DES) is a symmetric block cipher created by Whitfield Diffie, Martin Hellman and Walt Tuchmann in 1978 on the basis of the DES algorithm in order to eliminate the main drawback of the latter - a small key length (56 bits), which can be cracked by brute force. The speed of 3DES is 3 times lower than that of DES, but the cryptographic strength is much higher - the time required for 3DES cryptanalysis is
+         could be a billion times longer than the time it takes to break DES. 3DES is used more often than DES, which is easily cracked using today\'s technology (in 1998, the Electronic Frontier Foundation, using a special DES Cracker computer, cracked DES in 3 days). 3DES is a simple way to address the shortcomings of DES. The 3DES algorithm is based on DES, so for its
+         implementations may use programs written for DES. The official name of the algorithm used in the standards is TDEA or Triple DEA (Triple Data Encryption Algorithm). However, the term "3DES" is used more widely by vendors, users, and developers of cryptosystems.
+    </string>
+
+    <string name="theory_Atbash_head">
+       Atbash (Hebrew אתבש‎) is a simple substitution cipher for alphabetic writing. The encryption rule is to replace the i letter of the alphabet with the letter numbered n-i+1, where n is the number of letters in the alphabet. It is first found in the Hebrew text of the Bible / Tanakh. The Atbash cipher can also be considered as a special case of the affine cipher. The origin of the word "atbash" is explained by the principle of replacing letters. The word (more precisely, the abbreviation
+         in Hebrew) "אתבש" is composed of the letters "alef", "tav", "bet" and "shin", that is, the first, last, second and penultimate letters of the Hebrew alphabet. In Jer 51:1 the words לב קמי "lion kamai" (lit. "heart of my adversaries") are the "atbash" of the word כשדים "kasdim" ("Chaldeans"), and in Jer. 25:26, 51:41 the word ששך (“sheshah”, or “sesah” in the synodal translation) is an atbash of the word בבל “Bavel”.
+    </string>
+    <string name="theory_Atbash_history">
+        The Atbash cipher is already found in the mentioned places of the Bible / Tanaka and thus, it can be concluded that it was already known at the time of the creation of the Tanakh. According to other (less reliable sources) it was most likely invented by the Essenes, a Jewish rebel sect. They developed many different codes and ciphers that were used to hide important names and titles in order to avoid persecution later.
+        The knowledge of these codes and ciphers was then, according to legendary information, transferred to the Gnostics, who, in turn, passed them on to the Cathars. Later, the Knights Templar recruited Cathar nobles and adopted the knowledge of ciphers. Thus, the cipher was used for many years, from about 500 BC to 500 BC. e. before 1300 AD e. - the moment when the Knights Templar was dissolved (more precisely, ceased to exist on the territory of France,
+        continued to exist in Portugal, Scotland and other countries). The origin of the Atbash cipher (and other ciphers) in the sources of Judaism has a completely different story.
+    </string>
+
+    <string name="theory_Vigener_head">
+        The Vigenere cipher (fr. Chiffre de Vigenere) is a method of polyalphabetic encryption of literal text using a keyword. This method is a simple form of polyalphabetic substitution. The Vigenère cipher has been invented many times. This method was first described by Giovan Battista Bellaso (Italian Giovan Battista Bellaso) in the book La cifra del. Sig. Giovan Battista Bellaso in 1553, but in the 19th century he received the name of Blaise Vigenère,
+         French diplomat. The method is simple to understand and implement, but is inaccessible to simple cryptanalysis methods. Although the cipher is easy to understand and implement, for three centuries it has withstood all attempts to break it; which earned the name le chiffre indéchiffrable (fr. unsolved cipher). Many people have tried to implement encryption schemes that are essentially Vigenère ciphers.
+    </string>
+    <string name="theory_Vigener_history"><![CDATA[
+       In 1466, Leon Alberti, the famous architect and philosopher, submitted a treatise on ciphers to the papal office. The treatise discusses various methods of encryption, including masking the plaintext in some auxiliary text. The work concludes with his own cipher, which he called "a cipher fit for kings". It was a polyalphabetic cipher implemented as a cipher disk. The point is,
+         that the cipher uses multiple substitutions according to the key. Alberti later invented the deciphering code. This invention was far ahead of its time, since this type of cipher began to be used in European countries only 400 years later. In 1518, a new step was taken in the development of cryptography with the appearance in Germany of the first printed book on cryptography. Abbot Johann Trithemy, abbot of the monastery
+         in Würzburg, wrote the book "Polygraphy", which describes a number of ciphers. One of them uses the "Tritemius table" (now the "Vigenère table") and develops the idea of polyalphabetic substitution. The encryption system is as follows: the first letter of the source text is encrypted by the first line, the second by the second, and so on. After using the last line, the next letter is again encrypted on the first line. The Trithemius cipher is missing a key,
+         the secret is the encryption method itself.<br>
+         The next step in the development of the encryption method proposed by Trithemius was made by the Italian Giovanni Belazo. In 1553, his pamphlet Cipher of Signor Belazo was published. In this cipher, the key is the so-called password - a phrase or a word. The password was written periodically over the plaintext letters. The password letter above the corresponding plaintext letter indicated the row number in the Trithemian table followed by
+         replace (encrypt) these are letters.<br>
+         Subsequently, the ideas of Trithemius and Belaso were developed by Belaso\'s compatriot Giovanni Battista Porta. He proposed to abandon the alphabetical order of the letters in the first line of the Trithemius table and replace this order with some arbitrary one, which is the cipher key. The rows of the table were still cyclically shifted. In his book "On Secret Correspondence", Porta proposed a bigram cipher, and also gave a description of a mechanical disk
+         device that implements bigram substitution.<br>
+         In the middle of the 16th century, G. Cardano’s book “On Subtleties” appeared in Italy with the addition “On Various Things”. New ideas of cryptography were reflected there: the use of a part of the transmitted plaintext itself as a cipher key (the idea of a “self-key”) and a new encryption method that went down in history as the “Cardano lattice”. The French Ambassador in Rome, Blaise de Vigenère, having become acquainted with the works of Trithemius, Belazo, Cardano, Porta, Alberti,
+         also became interested in cryptography. In 1585, he wrote a Treatise on Ciphers, which outlines the basics of cryptography. In this work, he remarks: “All things in the world are a cipher. All nature is just a cipher and a secret letter." This idea was later repeated by Blaise Pascal, one of the founders of the theory of probability, and in the 20th century by Norbert Wiener, the "father of cybernetics". In fact, Vigenère combined the approaches
+         Trithemia, Bellaso, Porta to the encryption of open texts, essentially without introducing anything original into them. In our time, the "Vigenère cipher", consisting in the periodic continuation of the keyword on the table of Trithemius, has supplanted the names of its predecessors. David Kahn, in his book The Codebreakers, was disapproving of this, writing that history "ignored an important fact and named the cipher after Vigenère, despite the fact that it did not
+         made to create it."<br>
+         The Vigenère cipher had a reputation for being exceptionally resistant to "manual" cracking. The famous writer and mathematician Charles Lutwidge Dodgson (Lewis Carroll) called the Vigenère cipher unbreakable in his article "Alphabetic Cipher". The Alphabet Cipher, published in a children's magazine in 1868. In 1917, Scientific American also referred to the Vigenère cipher as unbreakable. This notion was debunked after Kasiski
+         completely cracked the cipher in the 19th century, although there are known cases of breaking this cipher by some experienced cryptanalysts as early as the 16th century.
+         The Vigenère cipher is simple enough to be used in the field, especially if cipher disks are used. For example, the "Confederates" used a copper cipher disk for the Vigenère cipher during the Civil War. The Confederate messages were far from secret, and messages were regularly hacked by their adversaries. During the war, the Confederate command relied on three key phrases: "Manchester Bluff", "Complete Victory"
+         and - as the war drew to a close - "Come Retribution".<br>
+        Gilbert Vernam tried to improve the cracked cipher (it was called the Vernam-Vigenère cipher in 1918), but despite his improvements, the cipher remained vulnerable to cryptanalysis. However, Vernam's work eventually led to the Vernam cipher, which is indeed impossible to crack.
+   ]]> </string>
+    <string name="theory_Vigener_cryptoanalysis">
+       The Vigenère cipher "blurs" the frequency characteristics of the appearance of characters in the text, but some features of the appearance of characters in the text remain. The main disadvantage of the Vigenère cipher is that its key is repeated. Therefore, a simple cryptanalysis of a cipher can be built in two steps:
+         Key length search. It is possible to analyze the distribution of frequencies in the ciphertext with different decimation. That is, take a text that includes every 2nd letter of the ciphertext, then every 3rd, etc. As soon as the distribution of letter frequencies differs greatly from uniform (for example, in entropy), then we can talk about the found key length.
+         Cryptanalysis. A set of l Caesar ciphers (where l is the found key length), which individually are easily cracked.
+         The Friedman and Kasiska tests can help determine the key length.
+    </string>
+    <string name="theory_Vigener_frequency_analysis">
+        Once the length of the key is known, the ciphertext can be written into multiple columns, each corresponding to one character of the key. Each column consists of the original text, which is encrypted with a Caesar cipher; the key to the Caesar cipher is just one character of the key for the Vigenère cipher, which is used in this column. Using techniques similar to those of breaking the Caesar cipher, the ciphertext can be decrypted.
+         An improvement to Kasiska\'s test, known as the Kirchhoff method, compares the frequency of occurrence of characters in columns with the frequency of occurrence of characters in the source text to find the key character for that column. When all the characters in the key are known, the cryptanalyst can easily decipher the ciphertext from the plaintext. The Kirchhoff method is not applicable when the Vigenère table is scrambled, instead of using the usual alphabetical
+         sequences, although the Kasiska test and match tests can still be used to determine the key length for this case.
+    </string>
+
+    <string name="theory_XOR_head">
+        Gambling is a symmetric encryption method that consists of a sequence of random numbers in plain text. The sequence of random numbers is called the gamma sequence and is used to encrypt and decrypt data. The summation is usually performed on some final field. For example, in the Galois field GF(2) the summation takes the form of the operation "exclusive OR (XOR)".
+         Gamma ciphers (additive ciphers) are the most efficient in terms of security and speed of transformations (encryption and decryption procedures). In terms of stability, these ciphers belong to the class of perfect ones. For encryption and decryption, elementary arithmetic operations are used - the open / encrypted message and the gamma, presented in numerical form, are added to each other modulo (mod). Recall that the result of adding two
+         integer modulo is the remainder of the division (for example, 5+10 mod 4 = 15 mod 4 = 3).
+         In the literature, ciphers of this class are often referred to as stream ciphers, although other types of ciphers are also classified as stream ciphers. In gamma ciphers, addition modulo N (general case) and modulo 2 (special case oriented to software and hardware implementation) can be used.
+    </string>
+
+    <string name="theory_Gost_28147_89_head">
+        GOST 28147-89 “Information processing systems. Cryptographic protection. Cryptographic Conversion Algorithm” is an obsolete state standard of the USSR (and later an interstate standard of the CIS), which describes the symmetric block encryption algorithm and its modes of operation. It is an example of DES-like cryptosystems created according to the classic Feistel iterative scheme.
+    </string>
+    <string name="theory_Gost_28147_89_history">
+       The history of the creation of the cipher and the criteria of the developers were first publicly presented in 2014 by the head of the group of developers of the algorithm Ivan Zabotin at a lecture dedicated to the 25th anniversary of the adoption of the Russian standard for symmetric encryption. Work on the algorithm, which later became the basis of the standard, began within the framework of the topic "Magma" (protection of information by cryptographic methods in computers of a number of the Unified System) on behalf of the Scientific and Technical
+         Council of the Eighth Main Directorate of the KGB of the USSR, in March 1978, after a long preliminary study of the DES standard published in 1976. In fact, work on the creation of an algorithm (or group of algorithms) similar to the DES algorithm began as early as 1976.
+         Initially, the works were labeled "Top Secret". Then they were downgraded to the "Secret" stamp. In 1983, the algorithm was downgraded to the "Restricted" mark. It was with the last mark that the algorithm was prepared for publication in 1989. On March 9, 1987, a group of cryptographers (applicant - military unit 43753) received a copyright certificate with priority No. 333297 for an invention for an encryption device using the Magma-2 algorithm.
+         GOST 28147-89 is a block cipher with a 256-bit key and 32 transformation cycles (called rounds), operating on 64-bit blocks. The basis of the cipher algorithm is the Feistel network.
+         There are four modes of operation of GOST 28147-89: simple replacement, scaling, scaling with feedback and the mode of generating an imitation insert.
+    </string>
+    <string name="theory_Gost_28147_89_cryptoanalysis">
+       It is believed that GOST is resistant to such widely used methods as linear and differential cryptanalysis. The reverse order of keys used in the last eight rounds provides protection against slide attack and reflection attack. Rostovtsev A. G., Makhovenko E. B., Filippov A. S., Chechulin A. A. in their work described the type of cryptanalysis, which is reduced to the construction of an algebraic objective function and finding its extremum.
+         Classes of weak keys were identified, in particular, it was shown that sparse keys (with a significant predominance of 0 or 1) are weak. According to the authors, their method is in any case better than exhaustive enumeration, but without numerical estimates. In May 2011, the well-known cryptanalyst Nicolas Courtois proved the existence of an attack on this cipher, which has a complexity of 28 (256) times less than the complexity of direct enumeration of keys, provided that there are 264 pairs of "plaintext/closed" text.
+         This attack cannot be carried out in practice due to too high computational complexity. Moreover, knowledge of 264 plaintext/privatetext pairs obviously allows one to read ciphertexts without even calculating the key. Most other works also describe attacks that are applicable only under certain assumptions, such as a certain kind of keys or substitution tables, some modification of the original algorithm, or still require volumes that are still unattainable.
+         memory or computing. Whether there are practical attacks without exploiting weaknesses in individual keys or replacement tables remains an open question.
+    </string>
+    <string name="theory_Gost_28147_89_criticism"><![CDATA[
+       The main problems of the standard are related to the incompleteness of the standard in terms of generating keys and substitution tables. It is believed that the standard has "weak" keys and substitution tables, but the standard does not describe the criteria for selecting and dropping "weak" ones. In October 2010, at a meeting of the 1st Joint Technical Committee of the International Organization for Standardization (ISO / IEC JTC 1 / SC 27), GOST was nominated for inclusion in the international block cipher standard ISO / IEC 18033-3.
+         In this regard, in January 2011, fixed sets of replacement nodes were formed and their cryptographic properties were analyzed. However, GOST was not accepted as a standard, and the corresponding substitution tables were not published. Thus, the existing standard does not specify an algorithm for generating substitution tables (S-boxes). On the one hand, this may be additional secret information (besides the key), and on the other hand, it raises a number of problems:
+        <ui>
+            <li>it is impossible to determine the cryptographic strength of an algorithm without knowing the replacement table in advance;</li>
+            <li>implementations of the algorithm from different manufacturers may use different substitution tables and may be incompatible with each other;</li>
+            <li>the possibility of intentional provision of weak substitution tables by the licensing authorities of the Russian Federation;</li>
+            <li>the potential (no prohibition in the standard) to use substitution tables in which the nodes are not permutations, which can lead to an extreme decrease in the strength of the cipher.</li>
+        </ui>
+    ]]></string>
+
+    <string name="theory_Polybius_head">
+        In cryptography, Polybius square, also known as the Polybius chessboard, is the original simple substitution code, one of the oldest coding systems proposed by Polybius. This type of coding was originally used for the Greek alphabet, but then it was extended to other languages.
+        One of the first encryption systems that used a table was described by the ancient Greek historian Polybius. It is not known for sure whether the talented writer is the author of this cipher. Nevertheless, experts call this cipher "Polybius's square". Even before the advent of our era, this cipher was widely used by both the Greeks and the Romans.
+        When using this cipher, a table is compiled, which, for example, for the English alphabet consists of five columns of five lines each. In each cell of this table, one of the letters of the alphabet is entered in random order. It should be noted that for the Russian alphabet, which contains more letters, the encryption table must contain at least 30 cells. This could be, for example, a table with six columns of five rows each.
+        The encryption algorithm lies in the fact that when converting plaintext into a cryptogram, you need to find a cell in the table with the desired letter and insert into the ciphertext the letter located in the cell below it in the same column. If the plaintext letter is in the cell of the bottom row, then the letter from the top cell of the same column should be written into the ciphergram.
+    </string>
+
+    <string name="theory_Morse_head">
+        Morse code, Morse code, Morse code is a sign encoding method in which letters of the alphabet, numbers, punctuation marks, and other symbols are represented as sequences of short and long signals called dots and dashes. Designed for transmission over serial communication channels. A unique feature of Morse code is the ability to encode and decode by a person without the use of special terminal devices.
+         The most widely used auditory technique is Morse code, which has become widespread in radio communications. In the Navy, Morse code is used in light communication between ships, carried out with the help of special signal searchlights. Tactile transmission of Morse code is rare, in particular, it is in some models of smart watches.
+         In standard Morse code, the unit of time is the duration of the shortest signal - a point. The length of a dash is three dots. A pause between elements of the same character is one dot, between characters in a word is 3 dots, between words is 7 dots. The code can be transmitted at any available rate, and the possibility of decoding is maintained even with significant inaccuracies in observing time intervals.
+         Named after the American inventor and artist Samuel Morse. Letter codes were added by Morse colleague, Alfred Weil - a fact that Morse subsequently denied in every possible way.
+        Elem, perhaps, also invented the digital part of the code. And in 1848, the Weyl/Morse code was improved by the German Friedrich Hecke. The code improved by Gerek is still in use today.
+    </string>
+    <string name="theory_Morse_history_1">
+        Morse code was created by inventors Samuel Morse, Alfred Weil and Joseph Henry in 1838 for the telegraph machine they invented, called the Morse machine. Some researchers believe that the author of the code was Alfred Weil, Samuel Morse\'s business partner, known for introducing a "commercial code" of groups of 5 characters.
+         Unlike the first switch-type telegraph machines with a rather unreliable transmission of information, which was often carried out through complex for that time, multi-wire communication lines and at low speeds (about 25 words per hour), the Morse apparatus made it possible to increase the transmission speed by 10 times, using there is only one signal wire (ground could serve as the second) and automatically documenting in the form of a signal recording
+         on paper tape. The device consisted of a telegraph key, with which the telegraph operator manually modulated the current in the line, and a receiving writing device that pulled a paper tape in front of a needle or roller with paint. Under the action of an electromagnet connected to the line, the roller was pressed against the paper, leaving traces of different durations on it, which, by means of Morse code, encoded the transmitted message.
+    </string>
+    <string name="theory_Morse_history_2">
+        The first, original, Morse code differed from the modern one, it used parcels of many different durations, “dot”, “dash”, “long dash” (4 times longer than “dot”), as well as pauses of different lengths inside the symbol. For example, the letter "C" (the Cyrillic analogue is "Ts") was encoded by three points in which the pause between the 1st and 2nd was short and between the 2nd and 3rd longer, and the number "0" was generally very long dash (more than 10 dots).
+         Another disadvantage was that it did not provide for the transfer of letters missing in the English alphabet, this complicated the use of the code in different countries. In 1848, Friedrich Hercke improved the Morse code by introducing new characters there, making the inter-element pauses inside the character unchanged and leaving only two elements in duration: a short one - a dot and a long one - a dash. Since 1851, the Gercke code, called the "Hamburg alphabet"
+         or continental Morse code, was adopted in Germany and Austria, while the original Morse code was called American.
+         In 1865, at the first International Telegraph Conference, which became the founder of the International Telecommunication Union, the international version of the Morse code, the International Morse code, was developed and adopted, which was a further development of the Gerek code. For a long time, different versions of Morse code coexisted independently in different countries, this did not cause much inconvenience, since the telegraph lines were wired, but at the beginning of the 20th century
+         the rapid development of radio communications began and in the 1930s the international version of Morse code replaced the rest. It is still in use today.
+         The Russian version of the alphabet was adopted in 1856. For the transmission of Russian letters, codes of similar Latin letters were used; the same correspondence of alphabets later passed into the MTK-2 letter-printing telegraph code (1963), and then into the computer encodings of the Cyrillic alphabet KOI-7 and KOI-8. The difference between these codes was a change in the interpretation of the letter “Q”, which in Morse code corresponds to “Sh”, and in MTK and KOI - “I”.
+         In 2004, the International Telecommunication Union (ITU) introduced a new Morse Code code for the commercial et symbol @ (· — — · — ·) to facilitate the transfer of email addresses.
+         The use of Morse code in telecommunications is currently regulated by Recommendation ITU-R M.1677-1 (10/2009). According to the document, 37 letters and numbers are officially defined, as well as 20 punctuation marks and other symbols. In the use of punctuation marks and letters of other languages that have no analogues in the English alphabet, there are still some discrepancies in different countries.
+    </string>
+    <string name="theory_Morse_coding_principle">
+        Morse code is a non-uniform code based on the principle that the more common English letters are encoded with shorter and simpler combinations of dots and dashes, making Morse code easier to learn and faster to transmit. This principle was observed by Samuel Morse in the printing house, where he counted the number of typographic characters used by typesetters in their work and thereby determined which letters were most often used in texts.
+    </string>
+
+    <string name="theory_Moon_head">
+       Moon\'s font (eng. The Moon System of Embossed Reading) is a font for the blind, which uses simplified embossed Latin letters. Proponents of this system claim that it is easier to understand than Braille. The Moon alphabet is used mainly by people who have lost their sight in adulthood, and already know the shape of the letters.
+         Unlike dotted braille, Moon\'s is made up of curves, angles, and lines. The complete alphabet contains only nine characters in various orientations. In more advanced versions of the Moon script, characters can correspond to individual sounds, as well as parts of words, whole words and numbers. About seven hundred characters fit on an A4 page.
+         Since preparing text in Moon is quite laborious, it is currently less popular than Braille. Now it is used by about four hundred people, most of whom live in the UK. It is also taught in some educational institutions in Holland and Germany.
+         Literature written in Moon\'s script is practically inaccessible outside of England.
+    </string>
+    <string name="theory_Moon_history">
+       Moon\'s font was developed by the English doctor William Moon (1818-1894), who lived in Brighton (East Sussex). After suffering from scarlet fever at the age of 21, he lost his sight and, like many people who become blind in adulthood, found Braille uncomfortable.
+         Moon first formulated the idea of creating a new script in 1843, and in 1845 he published the first schematic diagram of a font.
+    </string>
+
+    <string name="theory_Hill_head">
+        The Hill cipher is a polygram substitution cipher based on linear algebra and modular arithmetic. Invented by American mathematician Lester Hill in 1929. It was the first cipher that made it possible in practice (albeit with difficulty) to operate simultaneously with more than three characters. The Hill cipher has not found practical application in cryptography due to the weak resistance to cracking and the lack of a description of the algorithms for generating large direct and inverse matrices.
+    </string>
+    <string name="theory_Hill_history">
+       Hill\'s cipher was first described in the article "Cryptography in an Algebraic Alphabet", published in The American Mathematical Monthly in June-July 1929. In August of that year, Hill expanded on the topic and gave a speech on cryptography to the American Mathematical Society in Boulder, Colorado. His lecture later led to a second paper, Concerning Certain Linear Transformation Apparatus of Cryptography, which was published in the journal
+         "The American Mathematical Monthly" in March 1931. David Kahn, in his Code Breakers, described the Hill cipher and its place in the history of cryptography as follows:
+         Hill was one of those who developed a general and powerful method. In addition, Hill\'s cipher for the first time transferred cryptography using polygrams to the category of practical disciplines.
+    </string>
+    <string name="theory_Hill_cryptographic_strength">
+       The standard Hill cipher is vulnerable to a chosen-plaintext attack because it uses linear operations. A cryptanalyst who intercepts n^2 message character/ciphertext character pairs will be able to come up with a system of linear equations that is usually not difficult to solve. If it turns out that the system is unsolvable, then you just need to add a few more pairs of message character / ciphertext character. Such calculations by means of conventional linear algorithms
+         Algebra requires quite a bit of time. In this regard, to increase the cryptographic strength, some non-linear operations should be added to it. The combination of linear operations, as in the Hill cipher, and non-linear steps led to the creation of a permutation-permutation network (for example, the Feistel network). Therefore, from a certain point of view, modern block ciphers can be considered as a type of polygram ciphers.
+         The key length is the binary logarithm of the number of all possible keys. There are 26^{n^2} n × n matrices. So log_2(26^{n^2}) or approximately 4.7n^2 is the upper bound on the key length for a Hill cipher using n × n matrices. This is only an upper bound, since not every matrix is invertible, and only such matrices can be a key. The number of invertible matrices can be calculated using the Chinese Remainder Theorem. Matrix is modulo invertible
+         26 if and only if it is invertible modulo 2 and modulo 2.
+    </string>
+    <string name="theory_Hill_mechanical_release">
+       When working with two characters at a time, the Hill cipher does not provide any specific advantages over the Playfair cipher, and even inferior to it in terms of cryptographic strength and ease of calculation on paper. As the size of the key increases, the cipher quickly becomes inaccessible to human calculations on paper. The Hill cipher of dimension 6 was implemented mechanically. Hill and a partner received a patent for a device (U.S. Patent 1,845,947) that performed 6 × 6 matrix multiplication by
+         module 26 using a system of gears and chains. The location of the gears (and hence the key) could not be changed for a particular device, so triple encryption was recommended for security reasons. This combination was very strong for 1929, and it shows that Hill certainly understood the concepts of confusion and diffusion. However, the device was rather slow, so in World War II, Hill\'s machines were used only to encrypt the three-character code of radio signals.
+    </string>
+
+    <string name="theory_Caesar_head">
+       The Caesar cipher, also known as the shift cipher, the Caesar code is one of the simplest and most widely known encryption methods.
+         A Caesar cipher is a type of substitution cipher in which each character in the plaintext is replaced by a character that is some constant number of positions to the left or right of it in the alphabet. For example, in a cipher with a right shift of 3, A would be replaced by D, B would become D, and so on.
+         The cipher is named after the Roman general Gaius Julius Caesar, who used it for secret correspondence with his generals. The encryption step performed by the Caesar cipher is often included as part of more complex schemes such as the Vigenère cipher and still has a modern application in the ROT13 system. Like all monoalphabetic ciphers, the Caesar cipher is easy to break and has almost no practical application.
+    </string>
+
+    <string name="theory_Playfair_head">
+        The Playfair cipher or Playfair square is a manual symmetrical encryption technique that pioneered the use of bigram substitution. Invented in 1854 by the English physicist Charles Wheatstone, but named after Lord Lyon Playfair, who made a great contribution to promoting the use of this encryption system in the public service. The cipher provides for the encryption of pairs of characters (bigrams) instead of single characters, as in the substitution cipher and in more complex Vigenère cipher systems.
+         Thus, the Playfair cipher is more resistant to cracking than the simple substitution cipher, since its frequency analysis becomes more complicated. It can be carried out, but not for symbols, but for bigrams. Since there are more possible bigrams than symbols, the analysis is much more laborious and requires a larger amount of ciphertext.</string>
+    <string name="theory_Playfair_history">
+      Although the cipher was Wheatstone\'s invention, it became known as the Playfair cipher. Its first description was recorded in a document signed by Wheatstone on March 26, 1854. Wheatstone\'s friend Lord Lyon Playfair recommended this cipher for use by the highest statesmen and military figures. However, the British Foreign Office rejected this document due to the complexity of its perception. When Wheatstone offered to demonstrate that three out of four boys
+         in a nearby school learn how to use this cipher in fifteen minutes, the Deputy Foreign Minister replied: "It is very possible, but you will never teach this attache."
+         The cipher was used tactically by the British military in the Second Boer War and World War I, and by the Australians and Germans during World War II. The reason for using the Playfair cipher was its ease of use and the absence of the need for additional special equipment. The main purpose of using this encryption system was to protect sensitive but unclassified information during combat. By the time
+         enemy cryptanalysts cracked the message, the information was already useless to them.
+         The use of the Playfair cipher is currently impractical as modern computers can easily break the cipher within seconds. The first published algorithm for breaking the Playfair cipher was described in 1914 in a 19-page pamphlet by Joseph O. Mowburn.
+    </string>
+    <string name="theory_Playfair_description"><![CDATA[
+     The Playfair cipher uses a 5x5 matrix (for the Latin alphabet, for the Cyrillic alphabet it is necessary to increase the matrix size to 4x8) containing a keyword or phrase. To create a matrix and use a cipher, it is enough to remember the keyword and four simple rules. To compose a key matrix, first of all, you need to fill in the empty cells of the matrix with the letters of the keyword (without writing down repeated characters), then fill in the remaining cells of the matrix with alphabetic characters,
+         not occurring in the keyword, in order (in English texts, the character "Q" is usually omitted to reduce the alphabet, in other versions, "I" and "J" are combined into one cell). The keyword can be written in the top row of the matrix from left to right, or in a spiral from the top left corner to the center. The keyword, completed with the alphabet, makes up a 5x5 matrix and is the cipher key.
+       <ui>
+        <li> In order to encrypt a message, it is necessary to break it into bigrams (groups of two characters), for example, "Hello World" becomes "HE LL OW OR LD", and find these bigrams in the table. The two bigram symbols correspond to the corners of the rectangle in the key matrix. Determine the positions of the corners of this rectangle relative to each other. Then, guided by the following 4 rules, we encrypt pairs of characters in the source text:</li>
+        <li> If two bigram characters match (or if one character remains), add “X” after the first character, encrypt a new pair of characters and continue. In some versions of the Playfair cipher, "Q" is used instead of "X".</li>
+        <li> If the bigram characters of the source text occur in one line, then these characters are replaced by the characters located in the nearest columns to the right of the corresponding characters. If the character is the last character in the string, then it is replaced with the first character of the same string.</li>
+        <li> If the digram characters of the source text occur in one column, they are converted to the characters of the same column directly below them. If the character is the bottom character in a column, then it is replaced by the first character of the same column.</li>
+        <li> If the bigram characters of the original text are in different columns and different rows, then they are replaced by characters located in the same rows, but corresponding to other corners of the rectangle.</li>
+        <li> For decryption, it is necessary to use the inversion of these four rules, discarding the characters "X" (or "Q") if they do not make sense in the original message.</li>
+      </ui>
+   ]]> </string>
+    <string name="theory_Playfair_cryptoanalysis">
+        Like most formal cryptography ciphers, the Playfair cipher can also be easily broken if enough text is available. Obtaining the key is relatively simple if the ciphertext and plaintext are known. When only the ciphertext is known, it is possible to carry out a frequency analysis, but not for 26 possible characters of the Latin alphabet, but for 25 ⋅ 24 = 600 possible bigrams (one of the letters and bigrams of two identical letters are excluded). Cryptanalysts analyze compliance
+         between the frequency of bigrams in the ciphertext and the known frequency of bigrams in the language in which the message is written.
+         The algorithm for breaking the Playfair cipher was first described in a pamphlet by Lieutenant Joseph O. Mowburn in 1914. Later, in 1939, the cryptanalysis of a cipher was given in the book "Cryptanalysis - a study of ciphers and their solution" by H. F. Gaines. However, more detailed guidance for finding the key for the Playfair cipher can be found in chapter 7, "Solution to polygraphic substitution systems" of US Army Field Manual 34-40-2.
+         The Playfair cipher is similar to the two-square cipher, although the relative simplicity of the Playfair cipher system makes it easier to identify the text. It is noteworthy that the Playfair cipher digram and its inversion (AB and BA) will be deciphered as another digram and its inversion (RE and ER). There are many words in English that contain such inverse digrams, such as REceivER and DEpartED. Identification of closely lying inverse bigrams of the ciphertext and finding their correspondences in the list of known words of the source
+         text is one of the easy ways to build source code and start building a key.
+         There is another approach to cryptanalysis of the Playfair cipher called Random-restart hill climbing. It is based on a matrix of random symbols. With the help of the simplest iterations, the matrix of random characters is as close as possible to the original matrix. Obviously, this method is too complicated for humans, but computers using this algorithm can break this cipher, even with a small amount of text. Another distinguishing feature of the Playfair cipher from the two-square cipher
+         is that it never contains digrams with repeated characters (for example, EE). If there are no bigrams with repeated characters in the ciphertext and its length is large enough, then it can be assumed that the original text is encrypted with the Playfair cipher.
+         The German army, air force and police used the double Playfair cipher system in World War II as a "medium grade" cipher. They added a second square because the Playfair cipher was broken during World War I. The second symbol of each bigram was taken from this square, without using a keyword and placing the symbols in an arbitrary order. But this cipher was also broken at Bletchley Park because the Germans used the same message template. In eight messages encrypted with double
+         Playfair cipher, numbers from one to twelve were used, this made it possible to crack it quite easily.
+         Later attempts were made to improve the cipher by using a 7x4 matrix and adding the characters "*" and "#". Despite the fact that the analysis of the cipher has become more complicated, it can still be cracked using the same methods as the original one.
+    </string>
+
+    <string name="theory_Shannon_Fano_head">
+      The Shannon-Fano algorithm is one of the first compression algorithms, which was first formulated by American scientists Claude Shannon and Robert Fano. This compression method is very similar to the Huffman algorithm, which appeared a few years later and is a logical continuation of the Shannon algorithm. The algorithm uses codes of variable length: a frequently occurring character is encoded with a code of a smaller length, and a rarely occurring character is encoded with a code of a larger length. Shannon-Fano codes are prefix codes, that is, no
+         the codeword is not a prefix of any other. This property makes it possible to unambiguously decode any sequence of codewords.
+         Shannon-Fano coding is a prefix non-uniform coding algorithm. Refers to probabilistic compression methods (more precisely, zero-order contextual modeling methods). Like the Huffman algorithm, the Shannon-Fano algorithm uses the redundancy of the message, which lies in the non-uniform distribution of the frequencies of the characters of its (primary) alphabet, that is, it replaces the codes of more frequent characters with short binary sequences, and the codes of rarer characters with more
+         long binary sequences.
+         The algorithm was independently developed by Shannon (published "Mathematical Theory of Communication", 1948) and, later, by Fano (published as a technical report).
+    </string>
+    <string name="theory_Shannon_Fano_calculation_algorithm">
+       The Shannon-Fano code is built using a tree. The construction of this tree starts from the root. The entire set of encoded elements corresponds to the root of the tree (the top of the first level). It is divided into two subsets with approximately the same total probabilities. These subsets correspond to two second level vertices that are connected to the root. Further, each of these subsets is divided into two subsets with approximately the same total probabilities. They correspond to the tops of the third level.
+         If the subset contains a single element, then it corresponds to the end node of the code tree; such a subset cannot be partitioned. We proceed in this way until we get all the end vertices. We mark the branches of the code tree with the symbols 1 and 0, as in the case of the Huffman code.
+         In constructing the Shannon-Fano code, the set of elements can be partitioned, generally speaking, in several ways. The choice of splitting at level n can worsen the splitting options at the next level (n + 1) and lead to non-optimal code as a whole. In other words, optimal behavior at each step of the path does not yet guarantee the optimality of the entire set of actions. Therefore, the Shannon-Fano code is not optimal in the general sense, although it gives optimal results under certain probability distributions.
+         For the same probability distribution, in general, several Shannon-Fano codes can be constructed, and all of them can give different results. If we build all possible Shannon-Fano codes for a given probability distribution, then among them there will be all Huffman codes, that is, optimal codes.
+    </string>
+
+    <string name="intro_theory_spinner">Select the required item in the list to clarify information about the cipher</string>
+    <string name="intro_crypto_enc_dec">To encrypt or decrypt text, select the appropriate item</string>
+    <string name="intro_crypto_method">To select a method for encrypting or decrypting text, select the appropriate item from the list</string>
+    <string name="intro_crypto_clearForm">Click this button to clear all fields.</string>
+    <string name="intro_crypto_convert">Click on this button to make calculations.</string>
+    <string name="intro_crypto_copyBuf">To save text to clipboard</string>
+    <string name="intro_crypto_share">To send data to a third-party resource</string>
+    <string name="intro_crypto_qrCode">To create a QR code</string>
+
+    <string name="intro_qrCode_scan">To scan the qr code</string>
+    <string name="intro_qrCode_create">To create a qr code, first enter the text and then click on this button</string>
+    <string name="intro_qrCode_saveImage">To save the qr code to the gallery</string>
+</resources>

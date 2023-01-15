@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.crypto.CryptoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_encrypt"
+                    style="@style/CustomChipStile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/crypto_titleEncrypt" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_decrypt"
+                    style="@style/CustomChipStile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/crypto_titleDecrypt" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/crypto_titleMethod"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:id="@+id/spinner_methods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/crypto_titleKey"
+                android:textSize="@dimen/text_size" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiACTV_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/crypto_helpEnterKey"
+                android:textSize="@dimen/tooltip_text_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_hintEncrypted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crypto_titleEncryptText"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiACTV_publicText"
+                android:layout_width="664dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/crypto_helpEnterOpenText"
+                android:textSize="@dimen/tooltip_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton_saveBuffer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_crypto_save_buffer" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_saveQRCode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_menu_qr_scanner" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_share1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_crypto_share" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_hintDecrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crypto_titleDecryptText"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiACTV_privateText"
+                android:layout_width="659dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton_saveBuffer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_crypto_save_buffer" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_saveQRCode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_menu_qr_scanner" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_share2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_crypto_share" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/crypto_titleClear" />
+
+            <ImageButton
+                android:id="@+id/imageButton_convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_crypto_convert" />
+
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:focusableInTouchMode="false"
+            android:isScrollContainer="false"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

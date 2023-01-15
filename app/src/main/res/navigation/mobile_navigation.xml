@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_theory">
+
+    <fragment
+        android:id="@+id/nav_theory"
+        android:name="com.example.encryptionreference.ui.theory.TheoryFragment"
+        android:label="@string/menu_theory"
+        tools:layout="@layout/fragment_theory" />
+
+    <fragment
+        android:id="@+id/nav_crypto"
+        android:name="com.example.encryptionreference.ui.crypto.CryptoFragment"
+        android:label="@string/menu_crypto"
+        tools:layout="@layout/fragment_crypto" />
+
+    <fragment
+        android:id="@+id/nav_qr_scanner"
+        android:name="com.example.encryptionreference.ui.qr_scanner.QRScannerFragment"
+        android:label="@string/menu_qr_scanner"
+        tools:layout="@layout/fragment_qr_scanner" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.encryptionreference.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.encryptionreference.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
+

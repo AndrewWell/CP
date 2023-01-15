@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_theory"
+            android:icon="@drawable/ic_menu_theory"
+            android:orderInCategory="1"
+            android:title="@string/menu_theory"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_crypto"
+            android:icon="@drawable/ic_menu_crypto"
+            android:orderInCategory="2"
+            android:title="@string/menu_crypto"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/nav_qr_scanner"
+            android:icon="@drawable/ic_menu_qr_scanner"
+            android:orderInCategory="3"
+            android:title="@string/menu_qr_scanner"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:orderInCategory="4"
+            android:title="@string/menu_settings"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:orderInCategory="5"
+            android:title="@string/menu_about"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>
