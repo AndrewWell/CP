@@ -48,7 +48,7 @@ public class TheoryFragment extends Fragment {
         binding.spinnerMethod.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                spinner_method = getResources().getStringArray(R.array.methods_for_crypto)[i];
+                spinner_method = getResources().getStringArray(R.array.methods_for_theory)[i];
 
                 if (spinner_method.equals(getResources().getString(R.string.parsing_AES))) {
                     setTextFromArrayString(binding.textView4, R.array.theory_AES);
