@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="methods_for_crypto">
-        <item>@string/parsing_AES</item>
-        <item>@string/parsing_DES</item>
-        <item>@string/parsing_RC4</item>
-        <item>@string/parsing_RSA</item>
-        <item>@string/parsing_TripleDes</item>
         <item>@string/parsing_Atbash</item>
         <item>@string/parsing_Vigener</item>
-        <item>@string/parsing_Xor</item>
-        <item>@string/parsing_Gost_28147_89</item>
-        <item>@string/parsing_Polybius</item>
-        <item>@string/parsing_Morse</item>
-        <item>@string/parsing_Moon</item>
         <item>@string/parsing_Mirror</item>
-        <item>@string/parsing_Hill</item>
         <item>@string/parsing_Caesar</item>
-        <item>@string/parsing_Playfair</item>
     </string-array>
 
     <string-array name="methods_for_theory">

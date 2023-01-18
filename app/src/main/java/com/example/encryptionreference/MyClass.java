@@ -19,10 +19,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.FileProvider;
 
-
-import com.example.encryptionreference.ui.settings.SettingsFragment;
-
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -82,6 +83,25 @@ public class MyClass {
         }
     }
 
+    private static Uri saveImage(Bitmap image, Context context, Activity activity) {
+        File imageFolder = new File(context.getCacheDir(), "images");
+        Uri uri = null;
+        try {
+            imageFolder.mkdirs();
+            File file = new File(imageFolder, "shared_" + System.currentTimeMillis() + ".jpg");
+            FileOutputStream stream = new FileOutputStream(file);
+            image.compress(Bitmap.CompressFormat.JPEG, 90, stream);
+            stream.flush();
+            stream.close();
+            uri = FileProvider.getUriForFile(Objects.requireNonNull(context.getApplicationContext()),
+                    "comm.project.sharecontenttutorial" + ".provider", file);
+        } catch (IOException e) {
+            Toast.makeText(activity, R.string.toast_notSavedImage, Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+        return uri;
+    }
+
     private SharedPreferences openShared(Activity activity) {
         return activity.getSharedPreferences("MyShared", Context.MODE_PRIVATE);
     }
@@ -96,11 +116,12 @@ public class MyClass {
         return false;
     }
 
-    public String getDefLang(Activity activity){
-        return openShared(activity).getString("language","");
+    public String getDefLang(Activity activity) {
+        return openShared(activity).getString("language", "");
     }
-    public void setDefLang(Activity activity, String lan){
-        openShared(activity).edit().putString("language",lan).commit();
+
+    public void setDefLang(Activity activity, String lan) {
+        openShared(activity).edit().putString("language", lan).commit();
     }
 
     private void showIntro(Intro intro) {
@@ -150,16 +171,26 @@ public class MyClass {
         return null;
     }
 
-    public void shareText(Activity activity, String text){
+    public void shareText(Activity activity, String text) {
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
-        i.putExtra(Intent.EXTRA_TEXT,text);
-        activity.startActivity(Intent.createChooser(i,"Share"));
+        i.putExtra(Intent.EXTRA_TEXT, text);
+        activity.startActivity(Intent.createChooser(i, "Share"));
     }
 
-    public static void updateApp(Activity activity){
-       Intent intent = new Intent(activity, SplashScreenActivity.class);
-       activity.startActivity(intent);
-       activity.finishAffinity();
+    public void shareImage(Activity activity, Bitmap bitmap) {
+        Intent share = new Intent(Intent.ACTION_SEND);
+        share.setType("image/jpeg");
+        Uri bmpUri;
+        bmpUri = saveImage(bitmap, activity.getApplicationContext(), activity);
+        share.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        share.putExtra(Intent.EXTRA_STREAM, bmpUri);
+        activity.startActivity(Intent.createChooser(share, "ShareContent"));
+    }
+
+    public static void updateApp(Activity activity) {
+        Intent intent = new Intent(activity, SplashScreenActivity.class);
+        activity.startActivity(intent);
+        activity.finishAffinity();
     }
 }

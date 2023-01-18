@@ -35,6 +35,8 @@
     <string name="crypto_titleEncryptText">Encrypted Text</string>
     <string name="crypto_titleDecryptText">Decrypted Text</string>
     <string name="crypto_titleClear">Clear</string>
+    <string name="incorrectKey">Key entered incorrectly</string>
+    <string name="error_enterQR">Enter text to display QR code</string>
 
     <string name="copyBuf">Data copied to clipboard</string>
     <string name="clearForm">Form cleared</string>
@@ -386,13 +388,13 @@
     <string name="intro_theory_spinner">Select the required item in the list to clarify information about the cipher</string>
     <string name="intro_crypto_enc_dec">To encrypt or decrypt text, select the appropriate item</string>
     <string name="intro_crypto_method">To select a method for encrypting or decrypting text, select the appropriate item from the list</string>
-    <string name="intro_crypto_clearForm">Click this button to clear all fields.</string>
-    <string name="intro_crypto_convert">Click on this button to make calculations.</string>
-    <string name="intro_crypto_copyBuf">To save text to clipboard</string>
-    <string name="intro_crypto_share">To send data to a third-party resource</string>
-    <string name="intro_crypto_qrCode">To create a QR code</string>
+    <string name="intro_crypto_clearForm">Clearing all form fields</string>
+    <string name="intro_crypto_convert">Button for encrypting or decrypting information (depending on the selected item)</string>
+    <string name="intro_crypto_copyBuf">Save text to clipboard</string>
+    <string name="intro_crypto_share">Sending data to a third-party resource</string>
+    <string name="intro_crypto_qrCode">Creation of a QR code with the ability to save to internal memory or send to a third party</string>
 
-    <string name="intro_qrCode_scan">To scan the qr code</string>
-    <string name="intro_qrCode_create">To create a qr code, first enter the text and then click on this button</string>
-    <string name="intro_qrCode_saveImage">To save the qr code to the gallery</string>
+    <string name="intro_qrCode_scan">QR code scanning</string>
+    <string name="intro_qrCode_create">Creating a QR code: first you need to enter text</string>
+    <string name="intro_qrCode_saveImage">Save QR code to gallery</string>
 </resources>

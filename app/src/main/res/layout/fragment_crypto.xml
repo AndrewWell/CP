@@ -65,6 +65,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/key"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -154,7 +155,8 @@
                 android:layout_width="659dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:textColor="@color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"

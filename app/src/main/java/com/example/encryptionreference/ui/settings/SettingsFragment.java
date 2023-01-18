@@ -106,7 +106,6 @@ public class SettingsFragment extends Fragment {
 
     private void createFileLog() {
         try {
-            //todo найти куда сохраняется файл с логами
             FileOutputStream fileOutputStream = getActivity().openFileOutput("[LOG]: " + myClass.getData() + ".txt", Context.MODE_APPEND);
             fileOutputStream.write(dbManagerLog.getAllLogFromString().getBytes());
             fileOutputStream.close();

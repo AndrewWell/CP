@@ -22,6 +22,9 @@
     <string name="crypto_helpEnterOpenText">Введите открытый текст</string>
     <string name="crypto_helpEnterCloseText">Введите закрытый текст</string>
     <string name="crypto_helpEnterText">Введите текст</string>
+    <string name="incorrectKey">Неправильно введен ключ</string>
+    <string name="error_enterQR">Введите текст для отображения QR-кода</string>
+
 
     <string name="qrScanner_scan">Сканировать</string>
     <string name="qrScanner_create">Создать</string>
@@ -362,17 +365,17 @@
     <string name="nextShowIntro">Для продолжения нажмите на подсказку</string>
 
     <string name="intro_theory_spinner">Выберите необходимый пункт в списке для уточнении информации о шифре</string>
-    <string name="intro_crypto_enc_dec">Чтобы зашифровать или расшифровать текст выберите соответствубщий пункт</string>
+    <string name="intro_crypto_enc_dec">Чтобы зашифровать или расшифровать текст выберите соответствующий пункт</string>
     <string name="intro_crypto_method">Для выбора метода шифрования или расшифрования текста выберите соответствующий пункт из списка</string>
-    <string name="intro_crypto_clearForm">Для очистки всех полей нажмите на данную кнопку</string>
-    <string name="intro_crypto_convert">Чтобы произвести вычисления нажмите на данную кнопку</string>
-    <string name="intro_crypto_copyBuf">Для сохранения текста в буфер обмена</string>
-    <string name="intro_crypto_share">Для отправки данных на сторонний ресурс</string>
-    <string name="intro_crypto_qrCode">Для создания QR кода</string>
+    <string name="intro_crypto_clearForm">Очистка всех полей формы</string>
+    <string name="intro_crypto_convert">Кнопка шифрования или дешифрования информации (в зависимости от выбранного пункта)</string>
+    <string name="intro_crypto_copyBuf">Сохранение текста в буфер обмена</string>
+    <string name="intro_crypto_share">Отправка данных на сторонний ресурс</string>
+    <string name="intro_crypto_qrCode">Создание QR кода с возможностю сохранения во внутреннюю память или отправки третьему лицу</string>
 
-    <string name="intro_qrCode_scan">Для сканирования qr кода</string>
-    <string name="intro_qrCode_create">Для создания qr кода вначале введите текст а затем нажмите на данную кнопку</string>
-    <string name="intro_qrCode_saveImage">Для сохранения qr кода в галлерею</string>
+    <string name="intro_qrCode_scan">Сканирования QR кода</string>
+    <string name="intro_qrCode_create">Создание QR кода: вначале необходимо ввести текст</string>
+    <string name="intro_qrCode_saveImage">Сохранения QR кода в галлерею</string>
 
 
 </resources>
