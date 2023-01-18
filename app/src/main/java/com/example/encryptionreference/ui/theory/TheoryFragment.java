@@ -109,7 +109,7 @@ public class TheoryFragment extends Fragment {
         }
     }
 
-    private void createIntro() {//TODO добавить текст для подсказок Intro
+    private void createIntro() {
         myClass.addIntro(getActivity(), binding.spinnerMethod, getResources().getString(R.string.intro_theory_spinner), getResources().getString(R.string.nextShowIntro));
         myClass.showIntro(getActivity(), "isShowTheory");
     }
