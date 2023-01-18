@@ -11,7 +11,7 @@ public class Cipher {
 
     final static int RUS = 32;
     final static int ENG = 26;
-    String hint = "
+    String hint = "";
     Activity activity;
     TextView textView;
 
