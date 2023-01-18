@@ -208,6 +208,11 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textViewHintCrypto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <pl.droidsonroids.gif.GifImageView
             android:id="@+id/gifImage"
             android:layout_width="match_parent"

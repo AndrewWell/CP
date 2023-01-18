@@ -94,7 +94,7 @@ public class MyClass {
             stream.flush();
             stream.close();
             uri = FileProvider.getUriForFile(Objects.requireNonNull(context.getApplicationContext()),
-                    "comm.project.sharecontenttutorial" + ".provider", file);
+                    "com.example.encryptionreference.provider", file);
         } catch (IOException e) {
             Toast.makeText(activity, R.string.toast_notSavedImage, Toast.LENGTH_SHORT).show();
             e.printStackTrace();

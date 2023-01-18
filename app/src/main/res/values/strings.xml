@@ -397,4 +397,11 @@
     <string name="intro_qrCode_scan">QR code scanning</string>
     <string name="intro_qrCode_create">Creating a QR code: first you need to enter text</string>
     <string name="intro_qrCode_saveImage">Save QR code to gallery</string>
+    <string name="cipher_encVigener">To encrypt, you need to write down the key, repeating it so many times that the length of the key is equal to the length of the plaintext\n
+                Formula: Y=(X+K)mod L, where X is the number of the letter in the alphabet, K is the number of the letter of the key in the alphabet, L is the volume of the alphabet</string>
+    <string name="cipher_decVigener">To decrypt, you need to write down the key, repeating it so many times that the length of the key is equal to the length of the original text\n
+                Formula: Y=(X-K)mod L, where X is the number of the letter in the alphabet, K is the number of the letter of the key in the alphabet, L is the volume of the alphabet</string>
+    <string name="cipher_encCaesar">Encryption formula: Y=(X+K)mod L, where X is the number of the letter in the alphabet, K is the key, L is the volume of the alphabet</string>
+    <string name="cipher_decCaesar">Decryption formula: Y=(X-K)mod L, where X is the number of the letter in the alphabet, K is the key, L is the volume of the alphabet</string>
+    <string name="cipher_atbash">Formula for encryption and decryption: Y=M-N+1, where M = the volume of the alphabet, N is the number of the letter in the alphabet</string>
 </resources>

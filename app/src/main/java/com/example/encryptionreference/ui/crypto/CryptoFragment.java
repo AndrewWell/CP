@@ -43,7 +43,7 @@ public class CryptoFragment extends Fragment {
 
         binding = FragmentCryptoBinding.inflate(inflater, container, false);
         myClass = new MyClass();
-        cipher = new Cipher();
+        cipher = new Cipher(getActivity(), binding.textViewHintCrypto);
         View root = binding.getRoot();
         adapter = ArrayAdapter.createFromResource(getContext(), R.array.methods_for_crypto,
                 android.R.layout.simple_spinner_item);
@@ -227,6 +227,7 @@ public class CryptoFragment extends Fragment {
     }
 
     private void dialog(String textForQRCode) {
+        myClass.closeKeyboard(getActivity(), getView());
         ImageView cancel, save, share, qrCode;
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getContext());
