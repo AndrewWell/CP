@@ -36,10 +36,10 @@ public class Cipher {
         for (int i = 0, len = openText.length(); i < len; i++) {
             if (openText.charAt(i) >= 'a' && openText.charAt(i) <= 'z') {
                 encrypt += (char) (((openText.charAt(i) + key.charAt(i % keyLen) - 2 * 'a') % ENG) + 'a');
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(openText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), ENG, encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(openText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), ENG, encrypt.charAt(i))+"\n";
             } else if (openText.charAt(i) >= 'а' && openText.charAt(i) <= 'я') {
                 encrypt += (char) (((openText.charAt(i) + key.charAt(i % keyLen) - 2 * 'а') % RUS) + 'а');
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(openText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), RUS, encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(openText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), RUS, encrypt.charAt(i))+"\n";
             } else encrypt += openText.charAt(i);
         }if(textView!=null)textView.setText(hint);
         return encrypt;
@@ -53,10 +53,10 @@ public class Cipher {
         for (int i = 0, len = closeText.length(); i < len; i++) {
             if (closeText.charAt(i) >= 'a' && closeText.charAt(i) <= 'z') {
                 decrypt += (char) (((closeText.charAt(i) - key.charAt(i % keyLen) + ENG) % ENG) + 97);
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closeText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), ENG, decrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closeText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), ENG, decrypt.charAt(i))+"\n";
             } else if (closeText.charAt(i) >= 'а' && closeText.charAt(i) <= 'я') {
                 decrypt += (char) (((closeText.charAt(i) - key.charAt(i % keyLen) + RUS) % RUS) + 1072);
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closeText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), RUS, decrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closeText.charAt(i)), getOrdinalElemAlph(key.charAt(i % keyLen)), RUS, decrypt.charAt(i))+"\n";
             } else decrypt += closeText.charAt(i);
         }if(textView!=null)textView.setText(hint);
         return decrypt;
@@ -71,10 +71,10 @@ public class Cipher {
 
             if (plaintText_toLowerCase.charAt(i) >= 'a' && plaintText_toLowerCase.charAt(i) <= 'z') {
                 encrypt += (char) (((plaintText_toLowerCase.charAt(i) - 97 + shearStep) % ENG) + 97);
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)), shearStep, ENG, encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)), shearStep, ENG, encrypt.charAt(i))+"\n";
             } else if (plaintText_toLowerCase.charAt(i) >= 'а' && plaintText_toLowerCase.charAt(i) <= 'я') {
                 encrypt += (char) (((plaintText_toLowerCase.charAt(i) - 1072 + shearStep) % RUS) + 1072);
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)), shearStep, RUS, encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)), shearStep, RUS, encrypt.charAt(i))+"\n";
             } else encrypt += plaintText_toLowerCase.charAt(i);
         }if(textView!=null)textView.setText(hint);
         return encrypt;
@@ -89,10 +89,10 @@ public class Cipher {
 
             if (closedText_toLowerCase.charAt(i) >= 'a' && closedText_toLowerCase.charAt(i) <= 'z') {
                 decrypt += (char) ('z' - (('z' - closedText.charAt(i) + shearStep) % ENG));
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closedText_toLowerCase.charAt(i)), shearStep, ENG, decrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closedText_toLowerCase.charAt(i)), shearStep, ENG, decrypt.charAt(i))+"\n";
             } else if (closedText_toLowerCase.charAt(i) >= 'а' && closedText_toLowerCase.charAt(i) <= 'я') {
                 decrypt += (char) ('я' - (('я' - closedText_toLowerCase.charAt(i) + shearStep) % RUS));
-                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closedText_toLowerCase.charAt(i)), shearStep, RUS, decrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = ({1}+{2})mod{3} = {4}\n", i, getOrdinalElemAlph(closedText_toLowerCase.charAt(i)), shearStep, RUS, decrypt.charAt(i))+"\n";
             } else decrypt += closedText_toLowerCase.charAt(i);
         }if(textView!=null)textView.setText(hint);
         return decrypt;
@@ -106,10 +106,10 @@ public class Cipher {
         for (int i = 0; i < plainLength; i++) {
             if (plaintText_toLowerCase.charAt(i) >= 'a' && plaintText_toLowerCase.charAt(i) <= 'z') {
                 encrypt += getCodeFromSerialNumberAlph(ENG - getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)) - 1, false);
-                hint += MessageFormat.format("Y[{0}] = {1}-{2}+1 = {3}", i, ENG, plaintText_toLowerCase.charAt(i), encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = {1}-{2}+1 = {3}", i, ENG, plaintText_toLowerCase.charAt(i), encrypt.charAt(i))+"\n";
             } else if (plaintText_toLowerCase.charAt(i) >= 'а' && plaintText_toLowerCase.charAt(i) <= 'я') {
                 encrypt += getCodeFromSerialNumberAlph(RUS - getOrdinalElemAlph(plaintText_toLowerCase.charAt(i)) - 1, true);
-                hint += MessageFormat.format("Y[{0}] = {1}-{2}+1 = {3}", i, RUS, plaintText_toLowerCase.charAt(i), encrypt.charAt(i));
+                hint += MessageFormat.format("Y[{0}] = {1}-{2}+1 = {3}", i, RUS, plaintText_toLowerCase.charAt(i), encrypt.charAt(i))+"\n";
             } else encrypt += plaintText_toLowerCase.charAt(i);
         }if(textView!=null)textView.setText(hint);
         return encrypt;
